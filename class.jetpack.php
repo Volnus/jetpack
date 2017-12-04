@@ -1440,7 +1440,9 @@ class Jetpack {
 		if ( empty( $plan ) || ( isset( $plan['product_slug'] ) && 'jetpack_free' === $plan['product_slug'] ) ) {
 			$plan = wp_parse_args( $plan, array(
 				'product_slug' => 'jetpack_free',
-				'supports'     => array(),
+				'supports'     => array(
+					'woocommerce-analytics',
+				),
 				'class'        => 'free',
 			) );
 		}
