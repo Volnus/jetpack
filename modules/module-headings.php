@@ -59,6 +59,11 @@ function jetpack_get_module_i18n( $key ) {
 				'description' => _x( 'Set up Google Analytics without touching a line of code.', 'Module Description', 'jetpack' ),
 			),
 
+			'woocommerce-analytics' => array(
+				'name' => _x( 'WooCommerce Analytics', 'Module Name', 'jetpack' ),
+				'description' => _x( 'WooCommerce Analytics for Jetpack', 'Module Description', 'jetpack' ),
+			),
+
 			'gravatar-hovercards' => array(
 				'name' => _x( 'Gravatar Hovercards', 'Module Name', 'jetpack' ),
 				'description' => _x( 'Enable pop-up business cards over commenters’ Gravatars.', 'Module Description', 'jetpack' ),
