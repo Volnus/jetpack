@@ -81,6 +81,13 @@ export const VerificationServices = moduleSettingsForm(
 												target="_blank" rel="noopener noreferrer"
 												href="https://webmaster.yandex.com/sites/"
 											/>
+										),
+										baidu: (									
+											<ExternalLink
+												icon={ true }
+												target="_blank" rel="noopener noreferrer"
+												href="http://ziyuan.baidu.com/site/index/"
+											/>
 										)
 									}
 								}
@@ -108,7 +115,12 @@ export const VerificationServices = moduleSettingsForm(
 										id: 'yandex',
 										label: __( 'Yandex' ),
 										placeholder: '<meta name="yandex-verification" content="1234" />'
-									}
+									},
+									{
+										id: 'baidu',
+										label: __( 'Baidu' ),
+										placeholder: '<meta name="baidu-site-verification" content="1234" />'
+									}									
 								].map( item => (
 									<FormLabel
 										className="jp-form-input-with-prefix"
